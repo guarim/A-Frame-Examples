@@ -23,8 +23,8 @@
 	</a-sphere>
 	
 	<a-entity id="helix"
-		parametric-curve="xyzFunctions: cos(t), 0.2*t, sin(t); 
-			   		      tRange: 0, 20;">
+		parametric-curve="xyzFunctions: cos(t), 0.5*t, sin(t); 
+			   		      tRange: -10, 10;">
 	</a-entity>
 
 	<a-entity id="trefoil"
@@ -34,7 +34,7 @@
 
 	<a-entity 
 		curve-geometry="curveData: #helix; type: parametric-curve;
-					    totalPoints: 1000; lineColor: black;" 
+					    totalPoints: 10000; lineColor: black;" 
 		position="-2 0 -5">
 	</a-entity>
 

@@ -14,7 +14,7 @@
 
 <body>
 
-<a-scene environment="preset: default; fog: 0;" keyboard-shortcuts="enterVR: false;">
+<a-scene environment="preset: default; fog: 0.5;" keyboard-shortcuts="enterVR: false;">
 	
 	<a-assets>
 		<a-asset-item id="jet" src="models/jet/Jet.gltf"></a-asset-item>
@@ -36,7 +36,7 @@
 
 		<a-entity 
 			tube-geometry="curveData: #helix; type: parametric-curve; 
-						   tubeSegments: 200; radius: 0.01; tubeColor: yellow;">
+						   tubeSegments: 200; radius: 0.001; tubeColor: yellow;">
 		</a-entity>
 
 		<a-entity 

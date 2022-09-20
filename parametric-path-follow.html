@@ -29,14 +29,14 @@
 	
 	<a-entity id="helix"
 		parametric-curve="xyzFunctions: 6*cos(t), 1.2*t, 6*sin(t); 
-			   		      tRange: 0, 9;">
+			   		      tRange: 0, 12;">
 	</a-entity>
 
-	<a-entity position="0 0 -4">
+	<a-entity position="0 0 -6">
 
 		<a-entity 
 			tube-geometry="curveData: #helix; type: parametric-curve; 
-						   tubeSegments: 200; radius: 0.02; tubeColor: yellow;">
+						   tubeSegments: 200; radius: 0.01; tubeColor: yellow;">
 		</a-entity>
 
 		<a-entity 

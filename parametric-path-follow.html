@@ -21,7 +21,11 @@
 	</a-assets>
 	
 	<a-assets>
-          <img id="pdx" src="images/logo.png">
+          <img id="logo" src="images/logo.png">
+	  <img id="im" src="images/th.jpg">
+	  <img id="im1" src="images/th1.jpg">
+	  <img id="im2" src="images/th2.jpg">
+	  <img id="im3" src="images/th3.jpg">
         </a-assets>
 
 	<a-entity camera wasd-controls look-controls position="0 8 8"></a-entity>
@@ -54,13 +58,32 @@
 		-->
 		
 		<a-image 
-			 src="#pdx" 
+			 src="#logo" 
 			 width="10" height="5" 
 			 position="-4 0 -5" 
 			 scale="0.2 0.2 0.2" 
 			 rotation="0 45 0" 
-			 curve-follow="curveData: #helix; type: parametric-curve; duration: 20; loop: true"
-			 delay 5000>
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
+			 delay 500>
+		</a-image>
+		
+		<a-image 
+			 src="#im" 
+			 width="10" height="5" 
+			 position="-4 0 -5" 
+			 scale="0.2 0.2 0.2" 
+			 rotation="0 45 0" 
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
+			 delay 3000>
+		</a-image>
+		<a-image 
+			 src="#im1" 
+			 width="10" height="5" 
+			 position="-4 0 -5" 
+			 scale="0.2 0.2 0.2" 
+			 rotation="0 45 0" 
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
+			 delay 8000>
 		</a-image>
 
 	</a-entity>

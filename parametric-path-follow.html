@@ -19,6 +19,10 @@
 	<a-assets>
 		<a-asset-item id="jet" src="models/jet/Jet.gltf"></a-asset-item>
 	</a-assets>
+	
+	<a-assets>
+          <img id="pdx" src="images/logo.jpg">
+        </a-assets>
 
 	<a-entity camera wasd-controls look-controls position="0 8 5"></a-entity>
 	
@@ -46,6 +50,7 @@
 			curve-follow="curveData: #helix; type: parametric-curve;
 						  duration: 20; loop: true;">
 		</a-entity>
+		<a-image src="#pdx" width="10" height="5" position="-2 0 -5" scale="0.2 0.2 0.2" rotation="0 90 0" curve-follow="curveData: #helix; type: parametric-curve; duration: 10; loop: true"></a-image>
 
 	</a-entity>
 

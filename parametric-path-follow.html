@@ -16,7 +16,8 @@
 
 <body>
 
-<a-scene environment="preset: default;" physics="debug: true;">
+<a-scene raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse"
+      environment="preset: default;" physics="debug: true;">
             
 	<a-assets>
 		<a-asset-item id="jet" src="models/jet/Jet.gltf"></a-asset-item>

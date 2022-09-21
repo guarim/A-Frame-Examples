@@ -14,7 +14,7 @@
 
 <body>
 
-<a-scene environment="preset: starry; fog: 0.5;  flatShading: false; groundTexture: walkernoise; groundColor: #000000; groundColor2: #00ff00; grid: none" start>
+<a-scene environment="preset: starry; fog: 0.5; grid: none" start>
 
 	
 	<a-assets>
@@ -82,7 +82,15 @@
 			 width="10" height="5"
 			 position="0 0 -8"
 			 begin="4000"
-			 scale="0.6 0.6 0.6" 
+			 scale="0.8 0.8 0.8" 
+			 curve-follow="curveData: #helix1; type: parametric-curve; duration: 40; loop: true" 
+			 >
+		<a-image
+			 src="#im1" 
+			 width="10" height="5"
+			 position="0 0 -8"
+			 begin="4000"
+			 scale="0.8 0.8 0.8" 
 			 curve-follow="curveData: #helix1; type: parametric-curve; duration: 40; loop: true" 
 			 >
 		

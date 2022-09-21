@@ -26,6 +26,8 @@
 	  <img id="im1" src="images/th1.jpg">
 	  <img id="im2" src="images/th2.jpg">
 	  <img id="im3" src="images/th3.jpg">
+	  <img id="im4" src="images/th4.jpg">
+	  <img id="im5" src="images/th5.jpg">
         </a-assets>
 
 	<a-entity camera wasd-controls look-controls position="0 8 8"></a-entity>
@@ -35,16 +37,18 @@
 			   			  tRange: 0, 6.283;">
 	</a-entity>
 	
+	<!--
 	<a-entity id="helix"
 		parametric-curve="xyzFunctions: 9*cos(t), 5*t, 9*sin(t); 
 			   		      tRange: 0, 4.5;">
 	</a-entity>
+	-->
 
-	<a-entity position="-4 0 -5">
+	<a-entity >
 
 		<a-entity 
 			tube-geometry="curveData: #helix; type: parametric-curve; 
-						   tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
+						   tubeSegments: 200; radius: 0.01; tubeColor: yellow;" position="-8 0 -5">
 		</a-entity>
 
 		<!--
@@ -59,10 +63,11 @@
 		
 		<a-image 
 			 src="#logo" 
-			 width="10" height="5" 
+			 width="10" height="5"
+			 position="-8 0 -5"
 			 scale="0.2 0.2 0.2" 
 			 rotation="0 120 0" 
-			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true" position="-8 0 -5"
 			 delay 500>
 		</a-image>
 		
@@ -70,7 +75,8 @@
 		<a-image
 			 src="#im" 
 			 width="10" height="5" 
-			 scale="0.2 0.2 0.2" 
+			 scale="0.2 0.2 0.2"
+			 position="-8 0 -5"
 			 rotation="0 45 0" 
 			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
 			 delay 5000>
@@ -79,7 +85,8 @@
 		<a-image
 			 src="#im1" 
 			 width="10" height="5" 
-			 scale="0.2 0.2 0.2" 
+			 scale="0.2 0.2 0.2"
+			 position="-8 0 -5"
 			 rotation="0 45 0" 
 			 curve-follow="curveData: #helix; type: parametric-curve; duration: 30; loop: true"
 			 delay 10000>

@@ -39,8 +39,8 @@
 	
 	
 	<a-entity id="helix"
-		parametric-curve="xyzFunctions: 9*cos(t), 5*t, 9*sin(t); 
-			   		      tRange: 0, 4.5;">
+		parametric-curve="xyzFunctions: 9*cos(t), 4.5*t, 9*sin(t); 
+			   		      tRange: 0, 4;">
 	</a-entity>
 	
 
@@ -72,8 +72,8 @@
 			 src="#im" 
 			 width="10" height="5"
 			 scale="0.2 0.2 0.2" 
-			 curve-follow="curveData: #helix; type: parametric-curve; duration: 40; loop: true" 
-			 delay 1500>
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 50; loop: true" 
+			 delay 5000>
 		
 		</a-image>
 	

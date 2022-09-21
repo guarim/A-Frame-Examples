@@ -45,7 +45,12 @@
 	</a-entity>
 	
 	<a-entity id="helix1"
-		parametric-curve="xyzFunctions: 9*cos(t), 4.5*t, 9*sin(t); 
+		parametric-curve="xyzFunctions: 9*cos(t), 4.4*t, 9*sin(t); 
+			   		      tRange: 0, 4;">
+	</a-entity>
+	
+	<a-entity id="helix2"
+		parametric-curve="xyzFunctions: 9*cos(t), 4.3*t, 9*sin(t); 
 			   		      tRange: 0, 4;">
 	</a-entity>
 	
@@ -74,24 +79,24 @@
 			 position="0 0 -8"
 			 rotation="45 45 45" 
 			 begin="1000"
-			 scale="0.2 0.2 0.2" 
-			 curve-follow="curveData: #path; type: parametric-curve; duration: 40; loop: true" 
+			 scale="0.3 0.3 0.3" 
+			 curve-follow="curveData: #helix; type: parametric-curve; duration: 40; loop: true" 
 			 >
 		<a-image
 			 src="#im" 
 			 width="10" height="5"
 			 position="0 0 -8"
 			 begin="4000"
-			 scale="0.8 0.8 0.8" 
-			 curve-follow="curveData: #path; type: parametric-curve; duration: 40; loop: true" 
+			 scale="1.2 1.2 1.2" 
+			 curve-follow="curveData: #helix1; type: parametric-curve; duration: 40; loop: true" 
 			 >
 		<a-image
 			 src="#im1" 
 			 width="10" height="5"
 			 position="0 0 -8"
 			 begin="4000"
-			 scale="0.8 0.8 0.8" 
-			 curve-follow="curveData: #path; type: parametric-curve; duration: 40; loop: true" 
+			 scale="1.2 1.2 1.2" 
+			 curve-follow="curveData: #helix2; type: parametric-curve; duration: 40; loop: true" 
 			 >
 		
 		</a-image>

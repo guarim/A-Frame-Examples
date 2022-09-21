@@ -83,11 +83,31 @@
 			 position="0 0 -8"
 			 rotation="0 0 0"
 			 scale="0.5 0.5 0.5" 
+			 curve-follow= "curveData: #helix1; type: parametric-curve; duration: 50; loop: true" 
+			 >
+		</a-image>
+		
+	</a-entity>
+	
+	<a-entity position="0 -4 -8">
+
+		<a-entity 
+			tube-geometry="curveData: #helix1; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
+		</a-entity>
+				
+		
+		<a-image
+			 src="#im2" 
+			 width="10" height="5"
+			 position="0 0 -8"
+			 rotation="0 0 0"
+			 scale="0.5 0.5 0.5" 
 			 curve-follow= "curveData: #helix1; type: parametric-curve; duration: 60; loop: true" 
 			 >
 		</a-image>
 		
 	</a-entity>
+	
 
 </a-scene>
 </body>

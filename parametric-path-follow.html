@@ -10,6 +10,7 @@
 	<script src="js/aframe-parametric-curve.js"></script>
 	<script src="js/aframe-tube-geometry.js"></script>
 	<script src="js/aframe-curve-follow.js"></script>
+	<script src="js/components/link-controls.js"></script>
 	
 </head>
 
@@ -31,7 +32,7 @@
 	  <img id="im5" src="images/th5.jpg">
         </a-assets>
 
-	<a-entity camera wasd-controls look-controls position="0 8 8"></a-entity>
+	<a-entity camera wasd-controls look-controls position="0 8 12"></a-entity>
 	
 		
 	<a-entity id="helix"
@@ -66,7 +67,7 @@
 		</a-image>
 		
 	</a-entity>
-	<a-entity position="0 0 -2">
+	<a-entity position="2 0 -2">
 
 		<a-entity 
 			tube-geometry="curveData: #helix1; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
@@ -85,7 +86,7 @@
 		
 	</a-entity>
 	
-	<a-entity position="0 0 -2">
+	<a-entity position="2 0 -2">
 
 		<a-entity 
 			tube-geometry="curveData: #helix2; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
@@ -101,8 +102,11 @@
 			 curve-follow= "curveData: #helix2; type: parametric-curve; duration: 48; loop: true" 
 			 >
 		</a-image>
-		
+				
 	</a-entity>
+	<a-link href="animation.html"  image="#logo"></a-link>
+        <a-link href="art-gallery.html"  image="#im"></a-link>
+        <a-link href="bounded-movement.html"  image="#im1"></a-link>
 	
 
 </a-scene>

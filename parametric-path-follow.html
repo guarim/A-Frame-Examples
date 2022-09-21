@@ -14,7 +14,8 @@
 
 <body>
 
-<a-scene environment="preset: default; fog: 0.5;" keyboard-shortcuts="enterVR: false;">
+<a-scene environment="preset: starry; fog: 0.5;  flatShading: false; groundTexture: walkernoise; groundColor: #000000; groundColor2: #00ff00; grid: none" start>
+
 	
 	<a-assets>
 		<a-asset-item id="jet" src="models/jet/Jet.gltf"></a-asset-item>
@@ -39,6 +40,11 @@
 	
 	
 	<a-entity id="helix"
+		parametric-curve="xyzFunctions: 9*cos(t), 4.5*t, 9*sin(t); 
+			   		      tRange: 0, 4;">
+	</a-entity>
+	
+	<a-entity id="helix1"
 		parametric-curve="xyzFunctions: 9*cos(t), 4.5*t, 9*sin(t); 
 			   		      tRange: 0, 4;">
 	</a-entity>
@@ -71,8 +77,8 @@
 		<a-image
 			 src="#im" 
 			 width="10" height="5"
-			 scale="0.2 0.2 0.2" 
-			 curve-follow="curveData: #helix; type: parametric-curve; duration: 50; loop: true" 
+			 scale="0.3 0.3 0.3" 
+			 curve-follow="curveData: #helix1; type: parametric-curve; duration: 50; loop: true" 
 			 delay 5000>
 		
 		</a-image>

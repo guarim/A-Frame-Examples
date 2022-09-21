@@ -30,7 +30,7 @@
 	  <img id="im5" src="images/th5.jpg">
         </a-assets>
 
-	<a-entity camera wasd-controls look-controls position="0 8 8"></a-entity>
+	<a-entity camera wasd-controls look-controls position="0 6 6"></a-entity>
 	
 	<a-entity id="path"
 		parametric-curve="xyzFunctions: 2*cos(t), 0.5*cos(3*t) + 2, 2*sin(t); 
@@ -68,7 +68,7 @@
 			 scale="0.2 0.2 0.2" 
 			 curve-follow="curveData: #helix; type: parametric-curve; duration: 40; loop: true" 
 			 delay 500>
-			
+		<a-image
 			 src="#im" 
 			 width="10" height="5"
 			 scale="0.2 0.2 0.2" 

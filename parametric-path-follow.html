@@ -35,15 +35,15 @@
 	
 		
 	<a-entity id="helix"
-		parametric-curve="xyzFunctions: 12*cos(t), 5.5*t, 12*sin(t); tRange: 0, 6;">
+		parametric-curve="xyzFunctions: 12*cos(t), 5.5*t, 12*sin(t); tRange: 0, 5;">
 	</a-entity>
 	
 	<a-entity id="helix1"
-		parametric-curve="xyzFunctions: 12*cos(t), 4.4*t, 12*sin(t); tRange: 0, 6;">
+		parametric-curve="xyzFunctions: 12*cos(t), 4.4*t, 12*sin(t); tRange: 0, 5;">
 	</a-entity>
 	
 	<a-entity id="helix2"
-		parametric-curve="xyzFunctions: 12*cos(t), 3.3*t, 12*sin(t); tRange: 0, 6;">
+		parametric-curve="xyzFunctions: 12*cos(t), 3.3*t, 12*sin(t); tRange: 0, 5;">
 	</a-entity>
 	
 
@@ -88,7 +88,7 @@
 	<a-entity position="0 0 -10">
 
 		<a-entity 
-			tube-geometry="curveData: #helix1; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
+			tube-geometry="curveData: #helix2; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
 		</a-entity>
 				
 		
@@ -98,7 +98,7 @@
 			 position="0 -2 -10"
 			 rotation="0 0 0"
 			 scale="0.5 0.5 0.5" 
-			 curve-follow= "curveData: #helix1; type: parametric-curve; duration: 60; loop: true" 
+			 curve-follow= "curveData: #helix2; type: parametric-curve; duration: 60; loop: true" 
 			 >
 		</a-image>
 		

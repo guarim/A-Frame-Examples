@@ -33,23 +33,23 @@
 	  <img id="im5" src="images/th5.jpg">
         </a-assets>
 
-	<a-entity camera wasd-controls look-controls position="0 6 0" "></a-entity>
+	<a-entity camera wasd-controls look-controls position="0 8 0" "></a-entity>
 	
 		
 	<a-entity id="helix"
-		parametric-curve="xyzFunctions: 6*cos(t), 3*t, 6*sin(t); tRange: 0, 3;">
+		parametric-curve="xyzFunctions: 6*cos(t), 4*t, 6*sin(t); tRange: 0, 4;">
 	</a-entity>
 	
 	<a-entity id="helix1"
-		parametric-curve="xyzFunctions: 6*cos(t), 3*t, 6*sin(t); tRange: 0, 3;">
+		parametric-curve="xyzFunctions: 6*cos(t), 4*t, 6*sin(t); tRange: 0, 4;">
 	</a-entity>
 	
 	<a-entity id="helix2"
-		parametric-curve="xyzFunctions: 6*cos(t), 3*t, 6*sin(t); tRange: 0, 3;">
+		parametric-curve="xyzFunctions: 6*cos(t), 4*t, 6*sin(t); tRange: 0, 4;">
 	</a-entity>
 	
 
-	<a-entity position="8 0 -2">
+	<a-entity position="0 0 -4">
 
 		<a-entity 
 			tube-geometry="curveData: #helix; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >
@@ -89,7 +89,7 @@
 		
 	</a-entity>
 	
-	<a-entity position="-2 0 -2">
+	<a-entity position="0 0 -4">
 
 		<a-entity 
 			tube-geometry="curveData: #helix2; type: parametric-curve; tubeSegments: 200; radius: 0.01; tubeColor: yellow;" >

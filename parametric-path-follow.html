@@ -33,7 +33,17 @@
 	  <img id="im5" src="images/th5.jpg">
         </a-assets>
 
-	<a-entity camera wasd-controls look-controls position="0 11 0" "></a-entity>
+	<a-entity id="camera" 
+		  camera
+		  orbit-controls="
+                  autoRotate: true;
+                  nableDamping: false;
+                  rotateSpeed:1;
+                  target: 0 0 0;
+                  minDistance: 15;
+                  maxDistance: 50;
+                  initialPosition: 0 2 5"
+                  mouse-cursor="" position="0 11 0" "></a-entity>
 	
 		
 	<a-entity id="helix"

@@ -78,7 +78,7 @@ AFRAME.registerComponent("vrm-test", {
     <!-- vrm-anim="" -->
     <a-entity vrm="src: models/avatar.vrm;" 
               vrm-anim="src: models/normal-walk.vmd;"  
-              position="0 0 -1"
+              position="0 0 -2"
               rotation="0 180 0"
               vrm-test
               shadow="cast: true; receive: false;"
@@ -89,7 +89,7 @@ AFRAME.registerComponent("vrm-test", {
 
     <a-entity 
         id="player" 
-        position="0 0 1" 
+        position="0 0 2" 
         player-move="controllerListenerId: #controller-data;
                      navigationMeshClass: environmentGround;">
         

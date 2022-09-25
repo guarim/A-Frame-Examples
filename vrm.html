@@ -55,8 +55,8 @@ AFRAME.registerComponent("vrm-test", {
     {
         this.clock.getDelta();
         let t = this.clock.elapsedTime;
-        this.el.object3D.position.set( Math.sin(t), 0, -1.5 + Math.cos(t) );
-        this.el.object3D.lookAt( Math.sin(t - 0.01), 0, -1.5 + Math.cos(t - 0.01) );
+        this.el.object3D.position.set( Math.2*sin(t), 0, -1.5 + Math.2*cos(t) );
+        this.el.object3D.lookAt( Math.2*sin(t - 0.01), 0, -1.5 + Math.2*cos(t - 0.01) );
 
     }
 });
@@ -123,7 +123,7 @@ AFRAME.registerComponent("vrm-test", {
         raycaster-target>
     </a-torus-knot>
     
-    <a-box
+   <!-- <a-box
         width = "2" height = "1" depth = "1"
         position = "-1.1 0.5 -3"
         rotation = "0 45 0"  
@@ -162,6 +162,7 @@ AFRAME.registerComponent("vrm-test", {
         color="#8800FF"
         raycaster-target>
     </a-torus>
+    -->
 
    
 

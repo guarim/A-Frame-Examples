@@ -99,12 +99,31 @@ AFRAME.registerComponent('start', {
 
 <!-- https://github.com/supermedium/aframe-environment-component -->
 <a-scene environment="preset: default;" start>
-	  
+	
+	<a-asset-item id="desk" src="models/desk.glb"></a-asset-item>
+        <a-asset-item id="room" src="models/atelier rv-ra.glb"></a-asset-item>
+        <a-asset-item id="table" src="models/table.glb"></a-asset-item>
+        <a-asset-item id="person" src="models/p1.glb"></a-asset-item>
+        <a-asset-item id="vr" src="models/apple-vision-pro.glb"></a-asset-item>
+        <a-asset-item id="tv" src="models/tv.glb"></a-asset-item>
+        <a-asset-item id="man" src="models/gman.glb"></a-asset-item
+							     
 	<a-assets>
-    	<audio id="ambient" src="audio/ambient-wind.mp3" preload="auto"></audio>
+		<audio id="ambient" src="audio/ambient-wind.mp3" preload="auto"></audio>
   	</a-assets>
 		
 	<a-entity id="ambientSound" sound="src: #ambient; loop: true;"></a-entity>
+	  <a-gltf-model src="#desk" position="0 1 0" rotation="0 0 0" scale="1.8 1.8 1.8"></a-gltf-model>
+       
+       <a-gltf-model src="#room" position="-4 5 0.1" rotation="0 0 0" scale="0.1 0.1 0.1"></1a-gltf-model>
+      
+      <a-gltf-model src="#person" position="0.6 0.1 0" rotation="0 90 0" scale="0.5 0.5 0.5"
+      ></a-gltf-model>
+
+      <a-gltf-model src="#vr" position="0.6 0.83 0" rotation="0 220 0" scale="0.17 0.2 0.22"
+        ></a-gltf-model>
+
+      <a-gltf-model src="#man" position="0.6 0.1 2.5" rotation="0 -90 0" scale="0.013 0.013 0.013"></a-gltf-model>
 
 </a-scene>
 
